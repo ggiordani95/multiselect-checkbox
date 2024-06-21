@@ -7,11 +7,6 @@ export type Option = {
   group?: Option[];
 };
 
-enum Status {
-  REALIZED = "Realized",
-  NOTREALIZED = "Not-Realized",
-}
-
 const MultiSelect = (props: any) => {
   const [selectInput, setSelectInput] = useState<string>("");
   const isAllSelected = useRef<boolean>(false);
